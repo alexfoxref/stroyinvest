@@ -110,20 +110,25 @@
                 <div class="direction">
                     <h2>Направление деятельности</h2>
                     <div class="direction-blocks">
-                            <div class="direction-block" style="background-image: url('./img/directions/1.png')">
+                            <div class="direction-block">
                                 <h3>Девелоперские проекты</h3>
+                                <img src="./img/directions/1.png" alt="Направление деятельности" class="direction-block_img">
                             </div>
-                            <div class="direction-block" style="background-image: url('./img/directions/2.png')">
+                            <div class="direction-block">
                                 <h3>Продажа недвижимости</h3>
+                                <img src="./img/directions/2.png" alt="Направление деятельности" class="direction-block_img">
                             </div>
-                            <div class="direction-block" style="background-image: url('./img/directions/3.png')">
+                            <div class="direction-block">
                                 <h3>Строительство</h3>
+                                <img src="./img/directions/3.png" alt="Направление деятельности" class="direction-block_img">
                             </div>
-                            <div class="direction-block" style="background-image: url('./img/directions/4.png')">
+                            <div class="direction-block">
                                 <h3>Инвестиционные программы</h3>
+                                <img src="./img/directions/4.png" alt="Направление деятельности" class="direction-block_img">
                             </div>
-                            <div class="direction-block" style="background-image: url('./img/directions/4.png')">
+                            <div class="direction-block">
                                 <h3>Финансовые инструменты</h3>
+                                <img src="./img/directions/4.png" alt="Направление деятельности" class="direction-block_img">
                             </div>
                     </div>
                     <!-- /.direction-blocks -->
@@ -210,9 +215,23 @@
             slidesToScroll: 1,
             responsive: [
                 {
-                    breakpoint: 767,
+                    breakpoint: 575,
                     settings: {
                         slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1365,
+                    settings: {
+                        slidesToShow: 3,
                         slidesToScroll: 1
                     }
                 }
