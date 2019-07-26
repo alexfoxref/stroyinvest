@@ -213,6 +213,38 @@ h2
         margin-bottom: 15px
     p
         margin-bottom: 30px
+
+// contacts
+.contacts
+    font-size: 16px
+    &-img
+        margin-right: 12px
+        vertical-align: middle
+    &-address
+        display: block
+        line-height: 2
+    &-btn
+        margin-top: 36px
+    &-social-links
+        ul
+            margin-top: 45px
+            list-style: none
+            padding: 0
+            li
+                display: inline-block
+                a
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    background-color: $active-color
+                    color: $white
+                    margin-right: 15px
+                    width: 32px
+                    height: 32px
+                    border-radius: 50%
+                    &:hover
+                        background-color: lighten($active-color, 2%)
+                    
                     
 // Медиа запросы идут в конце документа
 @import 'media'

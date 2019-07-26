@@ -387,6 +387,56 @@ h2 {
   margin-bottom: 30px;
 }
 
+.contacts {
+  font-size: 16px;
+}
+
+.contacts-img {
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.contacts-address {
+  display: block;
+  line-height: 2;
+}
+
+.contacts-btn {
+  margin-top: 36px;
+}
+
+.contacts-social-links ul {
+  margin-top: 45px;
+  list-style: none;
+  padding: 0;
+}
+
+.contacts-social-links ul li {
+  display: inline-block;
+}
+
+.contacts-social-links ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #009adf;
+  color: #ffffff;
+  margin-right: 15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.contacts-social-links ul li a:hover {
+  background-color: #00a1e9;
+}
+
 @media (max-width: 767px) {
   html {
     font-size: 5px;
