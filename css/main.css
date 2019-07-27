@@ -115,7 +115,7 @@ h2 {
 
 .top-nav {
   background-color: #ffffff;
-  padding: 15px;
+  padding: 15px 34px;
   position: relative;
 }
 
@@ -128,7 +128,7 @@ h2 {
   font-size: 18px;
   position: absolute;
   top: 37px;
-  right: 15px;
+  right: 31px;
 }
 
 .top-nav_btn:hover {
@@ -149,6 +149,10 @@ h2 {
 
 .top-nav_menu li {
   margin-right: 45px;
+}
+
+.top-nav_menu li:last-child {
+  margin-right: 0;
 }
 
 .top-nav_menu li a {
@@ -186,7 +190,8 @@ h2 {
 .left-sidebar_btn {
   display: none;
   background-color: #ffffff;
-  padding: 15px;
+  padding: 15px 29px;
+  font-size: 16px;
   position: relative;
 }
 
@@ -200,7 +205,7 @@ h2 {
   position: absolute;
   top: 50%;
   margin-top: -10px;
-  right: 15px;
+  right: 32px;
   width: 15px;
   height: 15px;
   border-bottom: 2px solid #131313;
@@ -437,6 +442,37 @@ h2 {
   background-color: #00a1e9;
 }
 
+.organization-card {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  min-height: 42rem;
+  -webkit-transition: all -0.2s;
+  transition: all -0.2s;
+}
+
+.organization-card:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+}
+
+.organization-card a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.organization-card small {
+  display: block;
+  opacity: .5;
+  line-height: 1.5;
+}
+
+.organization-card p {
+  line-height: 22px;
+}
+
 @media (max-width: 767px) {
   html {
     font-size: 5px;
@@ -498,7 +534,7 @@ h2 {
     display: none;
   }
   .top-nav_menu li {
-    margin-right: 26px;
+    margin-right: 20px;
     line-height: 15px;
     font-size: 14px;
   }
