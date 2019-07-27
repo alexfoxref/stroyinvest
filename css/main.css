@@ -7,6 +7,10 @@
   margin: 0 15px;
 }
 
+.range-bar {
+  width: 90%;
+}
+
 @font-face {
   font-family: 'fontello';
   src: url("../fonts/fontello.eot?34067185");
@@ -471,6 +475,168 @@ h2 {
 
 .organization-card p {
   line-height: 22px;
+}
+
+.calc h4 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.calc-radio {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.calc-radio:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.calc-programms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.calc label {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.calc label:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+  background-color: #ffffff;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.calc label small {
+  display: block;
+  margin-left: 28px;
+  opacity: .5;
+  font-size: 10px;
+}
+
+.calc label:hover {
+  cursor: pointer;
+}
+
+.calc input[type="radio"] {
+  display: none;
+}
+
+.calc input[type="radio"]:checked + label:before {
+  background-color: #009adf;
+  border: 6px solid #ffffff;
+}
+
+.calc-popular {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 16px;
+  height: 25px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: #009adf;
+  position: relative;
+}
+
+.calc-popular:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  border: 6px solid transparent;
+  border-right: 6px solid #009adf;
+  margin-top: -6px;
+}
+
+.calc-legal {
+  font-size: 12px;
+}
+
+.calc-summ_invest {
+  margin-top: 30px;
+}
+
+.calc-summ_invest_label {
+  margin-right: 10px;
+}
+
+.calc-summ_invest_num {
+  display: inline-block;
+  padding: 10px 48px;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+.calc-results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.calc-total, .calc-monthly {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.calc-total strong, .calc-monthly strong {
+  font-size: 18px;
+  color: #009adf;
+  font-weight: 400;
+}
+
+.calc-total small, .calc-monthly small {
+  font-size: 10px;
+}
+
+.calc-monthly {
+  background-color: transparent;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+}
+
+.calc-monthly strong {
+  color: #131313;
+}
+
+.calc-monthly small {
+  font-size: 10px;
 }
 
 @media (max-width: 767px) {

@@ -270,6 +270,110 @@ h2
         p
             line-height: 22px
 
+// Инвестиционные программы
+// Оформление калькулятора
+.calc
+    h4
+        margin-top: 0
+        margin-bottom: 30px
+    &-radio
+        flex-basis: 50%
+        &:last-child
+            display: flex
+            flex-basis: 100%
+    &-programms
+        display: flex
+        flex-wrap: wrap
+    label
+        display: inline-block
+        margin-bottom: 20px
+        &:before
+            content: ''
+            display: inline-block
+            vertical-align: middle
+            width: 24px
+            height: 24px
+            box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1)
+            background-color: $white
+            border: 6px solid $white
+            border-radius: 50%
+            transition: all 0.2s
+        small
+            display: block
+            margin-left: 28px
+            opacity: .5
+            font-size: 10px
+        &:hover
+            cursor: pointer
+    input[type="radio"]
+        display: none
+        &:checked
+            &+label:before
+                background-color: $active-color
+                border: 6px solid $white
+    &-popular
+        padding-left: 5px
+        padding-right: 5px
+        margin-left: 16px
+        height: 25px
+        color: $white
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 10px
+        text-transform: uppercase
+        background-color: $active-color
+        position: relative
+        &:before
+            content: ''
+            width: 12px
+            height: 12px
+            background-color: transparent
+            display: inline-block
+            vertical-align: middle
+            position: absolute
+            top: 50%
+            left: -12px
+            border: 6px solid transparent
+            border-right: 6px solid $active-color
+            margin-top: -6px
+    &-legal
+        font-size: 12px
+    &-summ
+        &_invest
+            margin-top: 30px
+            &_label
+                margin-right: 10px
+            &_num
+                display: inline-block
+                padding: 10px 48px
+                background-color: $white
+                font-size: 18px
+    &-results
+        display: flex
+    &-total, &-monthly
+        margin-top: 20px
+        display: inline-block
+        text-align: center
+        background-color: $white
+        padding: 10px
+        flex-basis: 50%
+        strong
+            font-size: 18px
+            color: $active-color
+            font-weight: 400
+        small
+            font-size: 10px
+    &-monthly
+        background-color: transparent
+        display: inline-block
+        text-align: center
+        font-size: 18px
+        strong
+            color: $dark
+        small
+            font-size: 10px
+    
                     
 // Медиа запросы идут в конце документа
 @import 'media'
