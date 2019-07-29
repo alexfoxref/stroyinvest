@@ -373,7 +373,40 @@ h2
             color: $dark
         small
             font-size: 10px
-    
+
+//Раздел категории объектов
+.object
+    &-card
+        background-color: $white
+        margin-bottom: 30px
+        img
+            width: 100%
+        &_text
+            padding: 30px
+        &_title
+            display: block
+            font-size: 16px
+            text-decoration: none
+            color: $active-color
+        &_price
+            display: block
+            color: $active-color
+            font-size: 20px
+            font-weight: 700
+            text-align: center
+        &_btn
+            display: block
+            text-align: center
+        &_more
+            display: block
+            color: $dark
+            margin-top: 30px
+            text-align: center
+
+//Страница объекта
+.object-page
+    &_gallery
+        float: right
                     
 // Медиа запросы идут в конце документа
 @import 'media'
